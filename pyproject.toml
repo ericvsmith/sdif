@@ -3,20 +3,23 @@ build-backend = "setuptools.build_meta"
 requires = ["setuptools"]
 
 [project]
-authors = [{ name = "Tim D. Smith", email = "tim@tds.xyz" }]
-classifiers = ["License :: OSI Approved :: Apache Software License"]
+authors = [
+   { name = "Tim D. Smith", email = "tim@tds.xyz" },
+   { name = "Eric V. Smith", email = "eric@ericvsmith.com" },
+   ]
+license = "Apache-2.0"
 dependencies = ["attrs", "typing-extensions", "typing-inspect"]
 description = "Support for US Swimming SDIF v3 files"
-name = "sdif"
+name = "sdif3"
 readme = "README.md"
 requires-python = ">=3.9"
-version = "24.2.1post0"
+version = "100.0.0"
 
 [project.optional-dependencies]
 dev = ["black", "isort", "pip-tools", "pyright", "pytest"]
 
 [project.urls]
-repository = "https://github.com/tdsmith/sdif"
+repository = "https://gitlab.com/ericvsmith/sdif3"
 
 [tool.black]
 line-length = 100
@@ -29,4 +32,4 @@ pythonPlatform = "All"
 pythonVersion = "3.9"
 
 [tool.setuptools.package-data]
-sdif = ["py.typed"]
+sdif3 = ["py.typed"]
